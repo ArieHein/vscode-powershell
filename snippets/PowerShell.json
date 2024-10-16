@@ -225,6 +225,36 @@ Write-Progress -Activity \"${3:activityName}\" -Status \"\\$i of \\$array.count 
       "${0:$TM_SELECTED_TEXT}"
     ]
   },
+  "Function Advanced Help": {
+    "prefix": [
+      "advanced-help-function",
+      "advanced-comment-help"
+    ],
+    "description": "Advanced Comment-based help for an advanced function. More: Get-Help about_Comment_Based_Help",
+    "body": [
+      "<#",
+      ".SYNOPSIS",
+      "\t${1:A short one-line action-based description, e.g. 'Tests if a function is valid'}",
+      ".DESCRIPTION",
+      "\t${2:A longer description of the function, its purpose, common use cases, etc.}",
+      ".PARAMETER <Parameter-Name>",
+      "\t${3:A declaration of an input parameter with a short description of the purpose, potential visibility and default state. Create additional .PARAMETER lines for each}",
+      ".INPUTS",
+      "\t${4:The .NET types of objects that can be piped to the function or script. You can also include a description of the input objects}",
+      ".OUTPUTS",
+      "\t${5:The .NET type of the objects that the cmdlet returns. You can also include a description of the returned objects}",
+      ".NOTES",
+      "\t${6:Information or caveats about the function e.g. 'This function is not supported in Linux'}",
+      ".LINK",
+      "\t${7:Specify a URI to a help page, this will show when Get-Help -Online is used.}",
+      ".EXAMPLE",
+      "\t${8:Test-MyTestFunction -Verbose}",
+      "\t${9:Explanation of the function or its result. You can include multiple examples with additional .EXAMPLE lines}",
+      "#>",
+      "",
+      "${0:$TM_SELECTED_TEXT}"      
+    ]
+  },
   "Function-Advanced": {
     "prefix": [
       "function-advanced",

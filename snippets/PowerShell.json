@@ -252,7 +252,7 @@ Write-Progress -Activity \"${3:activityName}\" -Status \"\\$i of \\$array.count 
       "\t${9:Explanation of the function or its result. You can include multiple examples with additional .EXAMPLE lines}",
       "#>",
       "",
-      "${0:$TM_SELECTED_TEXT}"      
+      "${0:$TM_SELECTED_TEXT}"
     ]
   },
   "Function-Advanced": {
